@@ -1,0 +1,96 @@
+@import "../utils/vars";
+
+.navigation {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+}
+
+@import "logo";
+.logo--header {
+  color: $logoSecondPartHeader;
+}
+
+.logo--space {
+  margin-right: 93px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  display: block;
+  &__underline {
+    margin: 0;
+    position: relative;
+  }
+
+  &--space {
+    margin-right: 46px;
+  }
+
+  &--last-item {
+    margin-right: 0px;
+  }
+
+  &__underline::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(33, 150, 243, 1);
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    bottom: -32px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $logoAndHoverColor;
+    transition: $transition;
+  }
+}
+
+.nav-contacts {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  &--space {
+    margin-left: 345px;
+  }
+  & a:hover,
+  & a:focus {
+    fill: $logoAndHoverColor;
+    color: $logoAndHoverColor;
+  }
+}
+
+.nav-contact {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  &__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #757575;
+    cursor: pointer;
+    fill: #757575;
+    transition: $transition;
+  }
+  &__icon {
+    margin-right: 10px;
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
+}

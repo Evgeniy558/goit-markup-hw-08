@@ -1,0 +1,40 @@
+@import "indexMainContainer";
+
+.main-section {
+  margin: 0px auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  &__text {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    color: $textColorFooter;
+    width: 696px;
+    text-align: center;
+    margin: 0px auto 30px;
+    text-transform: uppercase;
+  }
+  &__btn {
+    color: $textColorFooter;
+    background-color: $logoAndHoverColor;
+    max-width: 200px;
+    min-height: 50px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 41px 10px 42px;
+    cursor: pointer;
+    margin: 0px auto;
+    border: none;
+    position: relative;
+    letter-spacing: 0.058rem;
+    line-height: 30px;
+    transition: $transition;
+    &:hover,
+    &:focus {
+      box-shadow: $boxShadowFooter;
+    }
+  }
+}

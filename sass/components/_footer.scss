@@ -1,0 +1,231 @@
+@import "container";
+
+.footer {
+  color: $textColorFooter;
+  font-weight: 700;
+  justify-content: center;
+  &--bg-footer {
+    background-color: $backgroundColorFooter;
+  }
+}
+
+.footer-contactsbox {
+  display: flex;
+  flex-direction: column;
+  &--spaces {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@import "logo";
+
+.logo--footer {
+  color: $textColorFooter;
+}
+
+.footer-contacts {
+  font-weight: 400;
+  &__adress {
+    color: $textColorFooter;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    margin: 0px;
+    line-height: 24px;
+    &--spaces {
+      margin: 0px 0px 9px;
+    }
+  }
+  &__link {
+    color: $textColorFooter;
+    opacity: 0.6;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 24px;
+    display: block;
+    &--spaces {
+      margin-bottom: 9px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $logoAndHoverColor;
+      transition: $transition;
+      opacity: 1;
+    }
+  }
+  &--spaces {
+    margin-top: 20px;
+  }
+}
+
+.footer-socialbox {
+  display: flex;
+  flex-direction: column;
+  &--spaces {
+    margin-top: 72px;
+    margin-left: 70px;
+  }
+}
+
+.footer-socialbox-text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer-socialbox-linksbox {
+  $backgroundColor: rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 10px;
+  &__link {
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColor;
+    border-radius: 50%;
+    display: flex;
+    fill: white;
+    transition: 250ms;
+    transition-timing-function: $transition;
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: $logoAndHoverColor;
+    transition-timing-function: $transition;
+  }
+}
+
+.form-footer {
+  width: 570px;
+  &--spaces {
+    margin-left: 76px;
+    margin-top: 72px;
+  }
+}
+
+.form-footer-emailnewsletter {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  &__text {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+  }
+  &__input-area {
+    height: 100%;
+    width: 100%;
+    line-height: 20px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid $formFooterBoarderColor;
+    color: $textColorFooter;
+    opacity: 1;
+    transition: $transition;
+    padding: 14px 15px;
+  }
+  &__input-area::placeholder {
+    color: $textColorFooter;
+    opacity: 0.6;
+    line-height: 20px;
+    padding-right: 295px;
+  }
+  &__input-area:focus,
+  &__input-area:hover {
+    box-shadow: $boxShadowFooter;
+  }
+  &__btn {
+    position: relative;
+    height: 50px;
+    background-color: $logoAndHoverColor;
+    border: none;
+    border-radius: 4px;
+    box-sizing: content-box;
+    padding-left: 42px;
+    text-align: left;
+    padding-right: 76px;
+    padding-left: 42px;
+    gap: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: $textColorFooter;
+    &--positionsvg {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%) translateX(148px);
+    }
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      box-shadow: $boxShadowFooter;
+      transition: $transition;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    &--bg-footer {
+      min-width: 320px;
+      background-color: $backgroundColorFooter;
+    }
+  }
+
+  .footer-contactsbox {
+    align-items: center;
+  }
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__adress {
+      &--spaces {
+        margin: 0px 0px 8px;
+      }
+    }
+    &__link {
+      &--spaces {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .footer-socialbox {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--spaces {
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  }
+
+  .form-footer {
+    max-width: 100%;
+    &--spaces {
+      margin: 60px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .form-footer-emailnewsletter {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .form-footer-emailnewsletter__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}

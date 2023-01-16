@@ -1,0 +1,29 @@
+.modal-window-form-mainpart-box-inputbox {
+  position: relative;
+  transition: var(--transition);
+  &__inputarea {
+    width: 100%;
+    height: 100%;
+    padding: 12px 12px 12px 42px;
+    border: 1px solid $formModalWindowBoarderColor;
+    border-radius: 4px;
+    outline: none;
+    transition: $transition;
+    font-size: 12px;
+    &:focus-within {
+      border: 1px solid $logoAndHoverColor;
+    }
+  }
+  &:focus-within {
+    fill: #2196f3;
+  }
+  &__svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 15px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

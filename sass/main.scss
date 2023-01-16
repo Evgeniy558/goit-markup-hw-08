@@ -1,0 +1,33 @@
+@import "./utils/vars";
+
+*::selection {
+  color: $textSelectionColor;
+  background-color: $backgroundSelectionColor;
+}
+
+body {
+  font-family: $fonFamily;
+  color: $textColorPrimary;
+  background-color: $backgroundColor;
+  font-size: $fontSize;
+  letter-spacing: $letterSpacing;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+@import "./components/header";
+@import "./components/footer";
+@import "./components/indexMainSection";
+@import "./components/indexSectionInformation";
+@import "./components/indexSectionDescription";
+@import "./components/indexSectionTeam";
+@import "./components/indexSectionCustomers";
+@import "./components/modalWindow";
+@import "./components/portfolioMainPart";
+
+@media screen and (max-width: 768px) {
+body {min-width: 320px;}
+}

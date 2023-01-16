@@ -1,0 +1,34 @@
+.modal-window-form-chekbox {
+  display: flex;
+  margin: 0 auto 30px;
+  position: relative;
+  color: rgba(117, 117, 117, 1);
+  line-height: 24px;
+  align-items: center;
+  &__input {
+    appearance: none;
+    width: 16px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    height: 15px;
+    margin-right: 8px;
+    transition: var(--transition);
+    &:checked {
+      border-color: $logoAndHoverColor;
+    }
+    &:checked + svg {
+      opacity: 1;
+    }
+  }
+  &__svg {
+    position: absolute;
+    opacity: 0;
+    transition: var(--transition);
+  }
+  &__link {
+    color: $logoAndHoverColor;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,9 @@
+.header {
+  border: solid 1px;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-color: #ececec;
+  @import "container";
+  @import "navigation";
+}
