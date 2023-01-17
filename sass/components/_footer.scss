@@ -178,7 +178,12 @@
 
   .footer-contactsbox {
     align-items: center;
+    &--spaces {
+      padding-top: 0px;
+      padding-bottom: 60px;
+    }
   }
+
   .footer-contacts {
     display: flex;
     flex-direction: column;
@@ -195,7 +200,6 @@
     }
   }
   .footer-socialbox {
-    max-width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,7 +212,7 @@
   .form-footer {
     max-width: 100%;
     &--spaces {
-      margin: 60px auto;
+      margin: 60px auto 0px;
       display: flex;
       flex-direction: column;
       gap: 20px;

@@ -38,3 +38,16 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .main-section {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    &__text {
+      font-size: 26px;
+      width: fit-content;
+      line-height: 42px;
+    }
+  }
+}

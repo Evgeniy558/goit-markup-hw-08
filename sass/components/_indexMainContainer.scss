@@ -1,6 +1,6 @@
 .container-main {
-  width: 1600px;
-  padding: 0px;
+  // width: 1600px;
+  // padding: 0px;
   margin: 0px auto;
   background-image: linear-gradient(
       to right,
@@ -8,4 +8,17 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/main-foto.jpg");
+}
+
+@media screen and (max-width: 768px) {
+  .container-main {
+    max-width: 480px;
+    min-width: 320px;
+    padding: 118px 0px;
+    background-image: url("../images/main-foto480400.jpg");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }

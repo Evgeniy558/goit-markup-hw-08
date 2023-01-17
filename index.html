@@ -14,7 +14,6 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <!-- <header class="header">
       <div class="container">
@@ -59,8 +58,8 @@
       </div>
     </header> -->
     <main>
-      <!-- <section>
-        <div class="container-main main-section">
+      <section class="main-section">
+        <div class="container-main">
           <h1 class="main-section__text">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
@@ -69,8 +68,8 @@
           </button>
         </div>
       </section>
-      <section class="container">
-        <ul class="section-information section-information--position">
+      <section class="">
+        <ul class="container section-information section-information--position">
           <li class="section-information-box">
             <div class="section-information-box__image">
               <svg
@@ -179,19 +178,24 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="section-team section-team--bg-color">
         <div class="container">
           <h2 class="section-team__title">Nasz zespół</h2>
           <ul class="team-members-grid">
-            <!-- <li>
+            <li>
               <figure class="team-member-foto">
-                <img
-                  src="images/productdesigner.jpg"
-                  width="270"
-                  height="260"
-                  alt="Product designer"
-                />
+                <picture>
+                  <source
+                    srcset="images/productdesigner450460.jpg"
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="images/productdesigner.jpg"
+                    alt="Product designer"
+                  />
+                </picture>
+
                 <figcaption class="team-member-information">
                   <span class="team-member-information__name">John Doe</span>
                   <p class="team-member-information__work-position">
@@ -232,12 +236,17 @@
             </li>
             <li>
               <figure class="team-member-foto">
-                <img
-                  src="images/frontendeveloper.jpg"
-                  width="270"
-                  height="260"
-                  alt="Product designer"
-                />
+                <picture>
+                  <source
+                    srcset="images/frontendeveloper450460.jpg"
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="images/frontendeveloper.jpg"
+                    alt="Product designer"
+                  />
+                </picture>
+
                 <figcaption class="team-member-information">
                   <span class="team-member-information__name">John Doe</span>
                   <p class="team-member-information__work-position">
@@ -278,12 +287,14 @@
             </li>
             <li>
               <figure class="team-member-foto">
-                <img
-                  src="images/marketing.jpg"
-                  width="270"
-                  height="260"
-                  alt="Product designer"
-                />
+                <picture>
+                  <source
+                    srcset="images/marketing450460.jpg"
+                    media="(max-width:768px)"
+                  />
+                  <img src="images/marketing.jpg" alt="Product designer" />
+                </picture>
+
                 <figcaption class="team-member-information">
                   <span class="team-member-information__name">John Doe</span>
                   <p class="team-member-information__work-position">
@@ -321,7 +332,7 @@
                   </ul>
                 </figcaption>
               </figure>
-            </li> -->
+            </li>
             <li>
               <figure class="team-member-foto">
                 <picture>
@@ -331,7 +342,6 @@
                   />
                   <img src="images/uidesigner.jpg" alt="Product designer" />
                 </picture>
-
                 <figcaption class="team-member-information">
                   <span class="team-member-information__name">John Doe</span>
                   <p class="team-member-information__work-position">
@@ -517,7 +527,7 @@
         </form>
       </div>
     </footer>
-    <!-- <div class="modal modal--is-hidden" data-modal>
+    <div class="modal modal--is-hidden" data-modal>
       <div class="modal-window">
         <form action="#" validate class="modal-window-form">
           <h2 class="modal-window-form__title">
@@ -623,19 +633,20 @@
             >
               <use href="images/icons.svg#icon-check"></use>
             </svg>
-            Oświadczam iż akceptuję&nbsp;<a
-              class="modal-window-form-chekbox__link"
-              href="#"
-              >Regulamin</a
-            >&nbsp;i&nbsp;<a class="modal-window-form-chekbox__link" href="#"
-              >Politykę Prywatności.</a
-            >
+            <p>
+              Oświadczam iż akceptuję
+              <a class="modal-window-form-chekbox__link" href="#">Regulamin</a>
+              i
+              <a class="modal-window-form-chekbox__link" href="#"
+                >Politykę Prywatności.</a
+              >
+            </p>
           </label>
           <button class="modal-window-form-btn" type="submit">Wyślij</button>
         </form>
         <button class="modal-window-closebtn" data-modal-close>&times;</button>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
