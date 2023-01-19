@@ -7,3 +7,33 @@
   @import "container";
   @import "navigation";
 }
+
+.menu-box {
+  display: flex;
+}
+
+@import "logo";
+
+@media screen and (max-width: 768px) {
+  .logo--space {
+    margin: 16px 0px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-box {
+    align-items: center;
+  }
+  .logo--space {
+    margin-right: 83px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-box {
+    align-items: center;
+  }
+  .logo--space {
+    margin: 24px 93px 24px 0px;
+  }
+}

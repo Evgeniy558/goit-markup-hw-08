@@ -42,9 +42,8 @@
     flex-direction: column;
     align-items: center;
     margin: 0px auto;
-    
     &__title {
-      margin: 0px auto 30px;
+      margin: 60px auto 30px;
     }
   }
   .section-customers-box {
@@ -56,6 +55,33 @@
       display: flex;
       justify-content: center;
       padding: 16px auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-customers {
+    &__title {
+      margin: 60px auto 30px;
+    }
+  }
+
+  .section-customers-box {
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+    &__item {
+      width: calc((100% - 60px) / 3);
+      display: flex;
+      justify-content: center;
+      padding: 16px auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-customers {
+    &__title {
+      margin: 94px auto 50px;
     }
   }
 }

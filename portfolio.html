@@ -303,70 +303,73 @@
     </main>
     <footer class="footer footer--bg-footer">
       <div class="container container--flexbox">
-        <div class="footer-contactsbox footer-contactsbox--spaces">
-          <a href="index.html" class="logo"
-            >Web<span class="logo logo--footer">Studio</span></a
-          >
-          <address>
-            <ul class="footer-contacts footer-contacts--spaces">
+        <div class="footer-flexbox-table">
+          <div class="footer-contactsbox footer-contactsbox--spaces">
+            <a href="index.html" class="logo"
+              >Web<span class="logo logo--footer">Studio</span></a
+            >
+            <address>
+              <ul class="footer-contacts footer-contacts--spaces">
+                <li>
+                  <p
+                    class="footer-contacts__adress footer-contacts__adress--spaces"
+                  >
+                    m.&nbsp;Warszawa,&nbsp;Aleje&nbsp;Jerozolimskie&nbsp;21
+                  </p>
+                </li>
+                <li>
+                  <a
+                    class="footer-contacts__link footer-contacts__link--spaces"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a class="footer-contacts__link" href="tel:+48111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-socialbox footer-socialbox--spaces">
+            <p class="footer-socialbox-text">DOŁĄCZ DO NAS</p>
+            <ul class="footer-socialbox-linksbox">
               <li>
-                <p
-                  class="footer-contacts__adress footer-contacts__adress--spaces"
-                >
-                  m. Warszawa, Aleje Jerozolimskie 21
-                </p>
+                <a class="footer-socialbox-linksbox__link" href="#">
+                  <svg width="20px" height="20px">
+                    <use href="images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a
-                  class="footer-contacts__link footer-contacts__link--spaces"
-                  href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+                <a class="footer-socialbox-linksbox__link" href="#">
+                  <svg width="20px" height="20px">
+                    <use href="images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a class="footer-contacts__link" href="tel:+48111111111"
-                  >+48 111 111 111</a
-                >
+                <a class="footer-socialbox-linksbox__link" href="#">
+                  <svg width="20px" height="20px">
+                    <use href="images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-socialbox-linksbox__link" href="#">
+                  <svg width="20px" height="20px">
+                    <use href="images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer-socialbox footer-socialbox--spaces">
-          <p class="footer-socialbox-text">DOŁĄCZ DO NAS</p>
-          <ul class="footer-socialbox-linksbox">
-            <li>
-              <a class="footer-socialbox-linksbox__link" href="#">
-                <svg width="20px" height="20px">
-                  <use href="images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-socialbox-linksbox__link" href="#">
-                <svg width="20px" height="20px">
-                  <use href="images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-socialbox-linksbox__link" href="#">
-                <svg width="20px" height="20px">
-                  <use href="images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-socialbox-linksbox__link" href="#">
-                <svg width="20px" height="20px">
-                  <use href="images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <form class="form-footer form-footer--spaces" action="#">
           <div class="form-footer-emailnewsletter">
-            <label for="email">
+            <label class="form-footer-emailnewsletter__label" for="email">
               <p class="form-footer-emailnewsletter__text">
                 Zapisz się do newslettera
               </p>

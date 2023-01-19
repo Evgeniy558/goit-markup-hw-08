@@ -47,6 +47,12 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .section-information-box {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .section-information-box {
     align-items: center;
@@ -58,3 +64,10 @@
     }
   }
 }
+// @media screen and (min-width: 1200px) {
+//   .section-information {
+//     &--position {
+//    margin: 94px auto;
+//     }
+//   }
+// }

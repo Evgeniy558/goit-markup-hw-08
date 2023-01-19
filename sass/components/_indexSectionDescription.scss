@@ -1,8 +1,6 @@
 @import "container";
 
 .section-description {
-  // display: flex;
-  // flex-direction: column;
   padding-bottom: 94px;
   &__title {
     font-size: 36px;
@@ -36,7 +34,14 @@
     font-weight: 700;
   }
 }
-@media screen and (max-width: 768px) {
-.section-description {
-display: none;}
-} 
+@media screen and (max-width: 1200px) {
+  .section-description {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-description {
+    margin-top: 94px;
+  }
+}

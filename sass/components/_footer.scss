@@ -5,6 +5,7 @@
   font-weight: 700;
   justify-content: center;
   &--bg-footer {
+    width: 100vw;
     background-color: $backgroundColorFooter;
   }
 }
@@ -147,8 +148,7 @@
     box-sizing: content-box;
     padding-left: 42px;
     text-align: left;
-    padding-right: 76px;
-    padding-left: 42px;
+    padding: 0px 76px 0px 42px;
     gap: 24px;
     font-size: 16px;
     font-weight: 700;
@@ -172,14 +172,13 @@
   .footer {
     &--bg-footer {
       min-width: 320px;
-      background-color: $backgroundColorFooter;
     }
   }
 
   .footer-contactsbox {
     align-items: center;
     &--spaces {
-      padding-top: 0px;
+      margin-top: 0px;
       padding-bottom: 60px;
     }
   }
@@ -213,6 +212,7 @@
     max-width: 100%;
     &--spaces {
       margin: 60px auto 0px;
+      padding-bottom: 60px;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -231,5 +231,97 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footer-flexbox-table {
+    display: flex;
+    margin-left: 76px;
+    margin-right: 86px;
+    justify-content: space-between;
+  }
+  .footer-contactsbox {
+    align-items: center;
+  }
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-socialbox {
+    align-items: center;
+    &--spaces {
+      margin-top: 65px;
+    }
+  }
+  .form-footer {
+    width: 100%;
+    &--spaces {
+      margin: 0px auto;
+    }
+  }
+  .form-footer-emailnewsletter {
+    max-width: 450px;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 60px;
+    gap: 20px;
+    &__text {
+      display: block;
+    }
+    &__label {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    &--flexbox {
+      display: flex;
+    }
+  }
+  .footer-flexbox-table {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .footer-contactsbox {
+    align-items: flex-start;
+  }
+
+  .footer-contacts {
+    align-items: flex-start;
+  }
+
+  .footer-socialbox {
+    &--spaces {
+      margin-top: 72px;
+      margin-left: 70px;
+    }
+  }
+  .form-footer {
+    margin-left: 78px;
+  }
+  .form-footer-emailnewsletter {
+    max-width: 570px;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    padding-bottom: 0px;
+    gap: 12px;
+    margin-top: 72px;
+    &__text {
+      display: block;
+    }
+    &__label {
+      text-align: start;
+    }
   }
 }

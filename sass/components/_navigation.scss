@@ -13,15 +13,6 @@
   align-items: center;
 }
 
-@import "logo";
-.logo--header {
-  color: $logoSecondPartHeader;
-}
-
-.logo--space {
-  margin-right: 93px;
-}
-
 .link {
   text-decoration: none;
   color: inherit;
@@ -92,5 +83,39 @@
   }
   &:last-child {
     margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navigation {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navigation {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  .link {
+    &--space {
+      margin-right: 60px;
+    }
+  }
+  .nav-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &--space {
+      margin-left: 101px;
+    }
+  }
+  .nav-contact__link {
+    font-size: 12px;
   }
 }

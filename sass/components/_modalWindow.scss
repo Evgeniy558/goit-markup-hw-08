@@ -82,7 +82,7 @@
     cursor: pointer;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .modal-window {
     max-width: 450px;
     min-width: 320px;
@@ -96,5 +96,13 @@
       padding-top: 0px;
       text-align: center;
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    max-width: 528px;
+    height: auto;
+    padding-bottom: 40px;
   }
 }

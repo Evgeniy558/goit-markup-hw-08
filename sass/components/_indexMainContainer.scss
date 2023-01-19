@@ -12,13 +12,59 @@
 
 @media screen and (max-width: 768px) {
   .container-main {
-    max-width: 480px;
+    max-width: 100%;
     min-width: 320px;
+    margin: 0px;
     padding: 118px 0px;
-    background-image: url("../images/main-foto480400.jpg");
+    background-image: url("../images/main-fotomb@1x.jpg");
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .container-main {
+      background-image: url("../images/main-fotomb@2x.jpg");
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container-main {
+    max-width: 100%;
+    min-width: 320px;
+
+    margin: 0px;
+    padding: 118px 0px;
+    background-image: url("../images/main-fototb@1x.jpg");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .container-main {
+      background-image: url("../images/main-fototb@2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-main {
+    max-width: 100%;
+    min-width: 320px;
+    margin: 0px;
+    padding: 200px 0px;
+    background-image: url("../images/main-fotodt@1x.jpg");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 94px;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .container-main {
+      background-image: url("../images/main-fotodt@2x.jpg");
+    }
   }
 }

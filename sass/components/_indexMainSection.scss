@@ -2,10 +2,9 @@
 
 .main-section {
   margin: 0px auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   display: flex;
   flex-direction: column;
+
   &__text {
     font-size: 44px;
     font-weight: 900;
@@ -39,15 +38,22 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .main-section {
     width: 100%;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    margin-bottom: 60px;
     &__text {
       font-size: 26px;
       width: fit-content;
+      max-width: 365px;
       line-height: 42px;
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-section {
+    width: 100%;
+    align-items: stretch;
   }
 }

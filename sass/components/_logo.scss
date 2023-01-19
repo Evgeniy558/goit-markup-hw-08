@@ -3,5 +3,12 @@
   font-size: 26px;
   text-decoration: none;
   color: $logoAndHoverColor;
- 
+  &--header {
+    color: $logoSecondPartHeader;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .logo {
+    font-size: 24px;
+  }
 }
