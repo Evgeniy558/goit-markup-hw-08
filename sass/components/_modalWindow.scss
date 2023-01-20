@@ -83,6 +83,9 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .modal {
+    padding: 15px;
+  }
   .modal-window {
     max-width: 450px;
     min-width: 320px;
